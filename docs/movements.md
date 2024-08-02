@@ -1,6 +1,6 @@
 # Function
 
-**Determines the target of the movement and the movement speed of the agent.**
+**Determines the target and movement speed of the agent.**
 
 ## MoveTo.cs
 
