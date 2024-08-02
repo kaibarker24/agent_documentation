@@ -1,0 +1,14 @@
+
+div.highlight pre {
+    background-color: #2d2d2d !important;
+    color: #f8f8f2 !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code {
+    background-color: #f8f8f2 !important;
+    color: #2d2d2d !important;
+    padding: 2px 4px;
+    border-radius: 3px;
+}

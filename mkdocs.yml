@@ -1,0 +1,19 @@
+site_name: Agent Project Documentation
+nav: 
+  - Home: index.md
+  - 'Setting up Physical Environment':
+    - 'Unity Models': 'unitymodels.md'
+    - 'Detectables': 'detectables.md'
+    - 'Navigation Area': 'nav-area.md'
+    - 'Decision Making Points': 'decision-points.md'
+  - 'Agent Control': 
+    - 'High Level Decision-Making Control': 'high-level-decisions.md'
+    - 'Visual Perception': 'vis-perception.md'
+    - 'Movements': 'movements.md'
+  - 'Supplementary Files':
+    - 'Visualization': 'supp-visualization.md'
+    - 'Log Files': 'logfiles.md'
+    - 'Crowd Agent Control': 'crowd-control.md'
+theme: readthedocs
+extra_css: 
+  - style.css
