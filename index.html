@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Agent Project Documentation</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Agent Project Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#setting-up-a-scene">Setting up a scene:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#player-and-smart-agent">Player and Smart Agent</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#generating-signage">Generating Signage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#generating-visibility-graph">Generating Visibility Graph</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#path-viewing">Path Viewing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-a-task">Running a task</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#room-numbers">Room numbers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#saving-trajectory">Saving trajectory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#generating-graph-matrix">Generating graph matrix</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visualizing-navigation-graph">Visualizing navigation graph</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visualizing-trajectory-heatmap">Visualizing trajectory heatmap</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-new-floors">Adding new floors</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-floor">1. Floor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-stairs">2. Stairs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-signs">3. Signs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-doors">4. Doors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-decision-nodes">5. Decision Nodes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#simulation-code">Simulation Code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#agent-spawning">Agent Spawning</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#for-mkdocs">For MkDocs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-agent-project">For Agent Project</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#agent-function">Agent Function</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Setting up Physical Environment</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="unitymodels/">Unity Models</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="detectables/">Detectables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="nav-area/">Navigation Area</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="decision-points/">Decision Making Points</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Agent Control</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="high-level-decisions/">High Level Decision-Making Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="vis-perception/">Visual Perception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="movements/">Movements</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Supplementary Files</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="supp-visualization/">Visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="logfiles/">Log Files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="crowd-control/">Crowd Agent Control</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Agent Project Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="overview">Overview</h1>
+<h2 id="setting-up-a-scene">Setting up a scene:</h2>
+<p>When in doubt, check the "Terrace" scene for reference on how to do things.</p>
+<ol>
+<li>When importing the environment, make sure all meshes are given Colliders and set to the tag that applies ("Floor" to the floor, "Wall" to the walls etc.)</li>
+<li>Drop in a player (or smart agent) prefab</li>
+<li>Give that prefab its Isovist (see below)</li>
+<li>Hit play on the scene</li>
+</ol>
+<h2 id="player-and-smart-agent">Player and Smart Agent</h2>
+<p>A smart agent is an agent that autonomously navigates an environment. A Player is a smart agent (subclass) that also has a mode that allows it to be manually controlled. Press "k" to toggle this mode.</p>
+<p>Scriptable objects are used for the isovists for each agent. If you want to create a new agent it must have a UNIQUE isovist object. You can create new scriptable objects at runtime like <code>ScriptableObject.CreateInstance&lt;Isovist&gt;()</code> and calling <code>agent.GetComponent&lt;FieldOfView&gt;.SetIsovist(isovist)</code> to make sure the agent gets that isovist. If you are placing a player or agent in the scene, you must give it an isovist by first creating one in the resource window (Assets folder) in Unity, <code>right click &gt; Create &gt; Isovist</code>. Then, drag the isovist into the <code>FieldOfView</code> component in the prefab.</p>
+<h2 id="generating-signage">Generating Signage</h2>
+<p>Signage is generated via the <code>SignManager</code> script. Make an empty in the scene, make sure it is at position 0, 0, 0 and rotation 0, 0, 0, and then attach a "SignManager" component. Give the sign manager a prefab (model of sign, one is provided), a layout in the form of a json, and a direction prefab (provided as a prefab titled "Directions"). Then click "Generate Signs" in the inspector. This will generate all the signs from the json.</p>
+<h2 id="generating-visibility-graph">Generating Visibility Graph</h2>
+<p>Similar to signage, create an empty and attach the "WorldGridContainer" component. Then you must make a scriptable object that contains the settings for the graph. In the resource window (Assets folder) in Unity, <code>right click &gt; Create &gt; World Grid</code>. Name it whatever, mess with the settings (see "Terrace" scriptable object in the ScriptableObjects folder for reference), and then add it to the WorldGridContainer you created earlier. Then click the "Generate Heatmap" button in the inspector to generate the graph (this may take a while).</p>
+<h2 id="path-viewing">Path Viewing</h2>
+<p>Paths can be generated from agents (see <code>CrowdAgentSpawner</code> as example). If the paths are exported as .csv, make an empty in the scene and give it an <code>AgentLineDrawer</code> component. Select all paths in the resource window (shift + click) and drag all of them too the <code>Files</code> field in the inspector. Adjust the settings and click "Visualize Paths" to see the paths. To clear the list, set the size of <code>Files</code> to 0. </p>
+<h2 id="running-a-task">Running a task</h2>
+<ol>
+<li>Grab player manually to the start position</li>
+<li>Enter name of destination in dest field in <code>SmartAgentController</code> component in the inspector</li>
+<li>Attach the <code>Door</code> Gameobject corresponding to the destination</li>
+<li>Play and press <strong>k</strong> to start the simulation (Follow the agent's state from the <code>StateMachine</code> component of the <code>Player</code>)</li>
+</ol>
+<h2 id="room-numbers">Room numbers</h2>
+<p>The room numbers form should look like the following: <strong>FXL_D_N</strong>, where 
+* F (optional) = Floor letter
+* X (required) = Room number.
+* L (optional) = Room letter.(E.g: T411A, T411B, T411C, ...)
+* D (optional) = Door number if a room has multiple doors. (E.g: T114_1, T114_2, ...)
+* N (optional) = Name of the room. (E.g: T116A_cafe)</p>
+<h2 id="saving-trajectory">Saving trajectory</h2>
+<p>Turn on <code>PathWriter</code> script under <code>Player</code>. This will save the <strong>X,Y,Z</strong> coordinates and <strong>Uncertainty</strong> value in a <strong>csv</strong> file. Enter the path to save this file in the <code>csv_path</code> variable.</p>
+<h2 id="generating-graph-matrix">Generating graph matrix</h2>
+<ol>
+<li>Make an empty in the scene</li>
+<li>Attach a <code>GraphGeneratorContainer</code> script to it</li>
+<li>Attach a <code>GraphGenerator</code> scriptable object to the <code>GraphGeneratorContainer</code>. Make sure to assign the right path of the trajectory to the <code>trajectoryData</code> variable in <code>GraphGenerator</code>. This expects a cvs file with the same format as written by <code>PathWriter</code>.</li>
+<li>Click <strong>Generate Graph</strong>. Matrix will be saved under <em>Assets/Data/Agents_Trajectory/graph.csv</em></li>
+</ol>
+<h2 id="visualizing-navigation-graph">Visualizing navigation graph</h2>
+<ol>
+<li>Run application</li>
+<li>Check <code>DrawLines</code> from inspector under the <code>NavigationalGraph</code> script in <code>decisionpoint</code> GameObject</li>
+<li>Switch to Scene tab view to visualize the graph. Make sure Gizmos visibility is activated</li>
+</ol>
+<h2 id="visualizing-trajectory-heatmap">Visualizing trajectory heatmap</h2>
+<ol>
+<li>Make an empty in the scene. Make sure it has position and rotation <code>(0, 0, 0)</code></li>
+<li>Attach <code>WorldGridContainer</code> script to it</li>
+<li>Attach <code>PathVisualizer</code> scriptable object to the <code>World Grid</code> variable in the inspector. Make sure to assign the right path of the trajectory to the <code>pathData</code> variable in <code>PathVisualizer</code>. This expects a <em>cvs</em> file with the same format as written by <code>PathWriter</code>.
+<strong>n.b</strong> To visualize participants trajectory, check the <code>participants</code> variable under <code>PathVisualizer</code> and set the correct file path to <code>pathData</code>.</li>
+<li>Click <strong>Generate Heatmap</strong>. This will create children objects and assign them the right colors </li>
+</ol>
+<h2 id="adding-new-floors">Adding new floors</h2>
+<h3 id="1-floor">1. Floor</h3>
+<p>Add new floor model to the scene. Set all wall objects to <code>Layer</code> to <code>Wall</code> and add <code>Mesh Collider</code> component.</p>
+<h3 id="2-stairs">2. Stairs</h3>
+<p>Take a look at the children of the GameObject <code>Stairs</code> in the main tree under <code>Terrace_Main</code> scene:
+* Stairs elements (stairs and platform) connect the two floors
+* Each element (stairs and platform) has to be set to Walkable under Navigation &gt; Object &gt; Navigation Static
+* Each stairs have their own signs named after and placed in the corresponding floor (E.g: -1, 0, 1, ...)
+* Each stairs sign has <code>Layer</code> set to <code>Stairs</code>
+* Access to stairs are blocked by doors called after the corresponding floor (E.g: door_-1, door_0, ...)
+* Each door has <code>Layer</code> set to <code>Wall</code>. This prevents agent to change floors while exploring with no intention of changing floors</p>
+<h3 id="3-signs">3. Signs</h3>
+<ol>
+<li>Add <code>SignManager</code> GameObject to the floor model and attach <code>SignManager</code> script to it</li>
+<li>Create a scriptable object under ScriptableObjects/SignLayout, attach <code>SignLayout</code> script and the corresponding json file </li>
+<li>Attach <code>Sign</code> prefab, <code>SignLayout</code> scriptable object and <code>Directions</code> prefab to the <code>SignManager</code> script</li>
+</ol>
+<h3 id="4-doors">4. Doors</h3>
+<p>Add doors to the different rooms with names as mentioned in the Room Numbers section in the Readme file. Set <code>Tag</code> to <code>Door</code> and attach script <code>Door</code>.</p>
+<h3 id="5-decision-nodes">5. Decision Nodes</h3>
+<ol>
+<li>Add <code>decisionpoint</code>GameObject to the floor model and attach <code>NavigationalGraph</code> script to it</li>
+<li>Manually add decision nodes and their possible directions as children. Take a look at the decision nodes implemented in the <code>Terrace_Main</code> scene in floor T, G and 1. </li>
+<li>Attach <code>DecisionPoint</code> script to each decision node. Manually set <code>id</code></li>
+</ol>
+<p>Decision nodes should not overlap. Direction subnodes should be outside of the corresponding decision node.</p>
+<h2 id="simulation-code">Simulation Code</h2>
+<p>The simulation is mainly managed by the <code>StateMachine.cs</code> and <code>SmartAgentController.cs</code> scripts.</p>
+<h2 id="agent-spawning">Agent Spawning</h2>
+<p>Script <code>AgentSpawner.cs</code> has a list of agents to spawn agents sequentially: <code>partsList</code>. Each element in the list represents an agent and its parameters, saved as a struct called <code>PartInfo</code>.
+1. To activate agent spawning, create a gameobject in the scene and add the <code>AgentSpawner.cs</code>. Deactivate any SmartAgent gameobject in the scene if activated
+2. Enter the list of agents parameters in the <code>fillPartsList()</code> method. Common parameters like the uncertainty coefficients are set in the prefab <code>Spawned Agent</code> found in the prefabs folder
+3. Assign the prefab <code>SpawnedAgent</code> to the variable <code>Player</code> in the script
+4. Enter the spawning position and the destination name and assign the destination door gameobject.
+5. Run the program</p>
+<h2 id="commands">Commands</h2>
+<h3 id="for-mkdocs">For MkDocs</h3>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs -h</code> - Print help message and exit.</li>
+</ul>
+<h3 id="for-agent-project">For Agent Project</h3>
+<ul>
+<li>Ctrl + K, Ctrl + C (comment) , Ctrl + U (uncomment)</li>
+<li>Ctrl + K, Ctrl + 0 - collapse all functions</li>
+<li>Ctrl + K, Ctrl + J - unfold all functions</li>
+</ul>
+<h2 id="agent-function">Agent Function</h2>
+<p><img alt="agent function" src="img/agent_function.jpg" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="unitymodels/" class="btn btn-neutral float-right" title="Unity Models">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="unitymodels/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.0
+Build Date UTC : 2024-08-02 22:28:31.399522+00:00
+-->
