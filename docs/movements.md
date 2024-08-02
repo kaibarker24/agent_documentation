@@ -6,7 +6,7 @@
 
 ### Initialize()
 
-Initializes an Agent object and sets the movement speed using the parameter ```speed```. An initialized agent is not pathfinding or moving by default.
+Initializes an Agent object and sets the movement speed using the parameter ```speed```. An initialized agent is not pathfinding or moving by default. 
 
     public void Initialize(float speed)
     {
