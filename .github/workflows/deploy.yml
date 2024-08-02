@@ -24,7 +24,7 @@ jobs:
 
       - name: Build and deploy
         run: |
-          mkdocs build
-          mkdocs gh-deploy --force
+          python -m mkdocs build
+          python -m mkdocs gh-deploy 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
