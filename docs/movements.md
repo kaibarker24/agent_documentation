@@ -27,7 +27,7 @@ Calls initializer and sets the movement speed of the Agent.
 
 ### SetTarget()
 
-Sets the target goal that the Agent will move to. 
+Sets the target goal that the Agent will move to.
 
 Goal object is set through parameter ```goal``` and the Agent destination is mapped to the position of the goal object. The Agent then transitions to an active pathfinding state and will begin to move. The ```stairs``` parameter denotes if there are any stairs in the environment, and therefore dictates multi-level movement for the Update() function.
 
