@@ -1,5 +1,7 @@
 # Function
 
+Controls the smart agent and enables complex movement through processing, decision making, and movement execution.
+
 ## SmartAgentController.cs
 
 ### InitializeAgent()
