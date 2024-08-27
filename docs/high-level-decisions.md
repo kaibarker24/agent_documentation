@@ -1,6 +1,6 @@
 # Function
 
-Controls the smart agent and enables complex movement through processing, decision making, and movement execution.
+Controls everything including spawning agents, agent’s decision-making inside/outside decision-making zones, and player input overwrite.
 
 ## SmartAgentController.cs
 
